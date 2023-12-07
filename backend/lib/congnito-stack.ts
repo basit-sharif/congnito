@@ -63,8 +63,8 @@ export class CongnitoStack extends cdk.Stack {
     });
 
     const googleProvider = new cognito.UserPoolIdentityProviderGoogle(this, "Google_Provider", {
-      clientId: "224672829739-mmvumtuflf359ov7dq8nsoj0kfqaqh7r.apps.googleusercontent.com",
-      clientSecret: "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",     // Deprecated: use clientSecretValue instead https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cognito.UserPoolIdentityProviderGoogleProps.html#example
+      clientId: "",
+      clientSecret: "",     // Deprecated: use clientSecretValue instead https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cognito.UserPoolIdentityProviderGoogleProps.html#example
       userPool: userPool,
       attributeMapping: {
         email: cognito.ProviderAttribute.GOOGLE_EMAIL,
